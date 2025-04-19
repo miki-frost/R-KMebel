@@ -13,10 +13,17 @@ body {
     font-family: Arial, sans-serif;
     color: #333;
 }
+
 a {
   text-decoration: none;
   color: #000;
   display: inline-block; 
+}
+
+img {
+  max-width: 100%;
+  max-height: 450px;    
+  display: block; 
 }
 
 a:hover,
@@ -24,16 +31,27 @@ a:focus {
     text-decoration: underline;
 }
 
-
 /* Mobile first */
-
 /* Header */
+
+img.logo {
+  max-width: 125px;
+  min-width: 100px;
+  height: auto;
+}
+
+header>h1 {
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+
 header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
 }
+
 
 header nav{
     margin: 15px;
@@ -44,17 +62,11 @@ header nav ul {
     display: flex;
     align-items: center;
     gap: 10px;
-
 }
 
 header nav ul li {
     font-size: 15px;
     text-transform: uppercase;
-}
-
-img.logo {
-  width: 150px;
-  height: auto;
 }
 
 /* Kolor tła */
@@ -82,25 +94,43 @@ main div {
     margin: 10px;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    display: block; }
-
 section.hero{
+
     padding: 5px;
     position: absolute;
     color: #e1d0d0;
     background-color: rgba(0, 0, 0, 0.4);
     text-align: center;
 }
+section.hero>p{
+    line-height: 3;
+    font-size: 1.3em;
+}
 
+section.hero>h2{
+    margin-bottom: 20px;
+}
 footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 33.33vh;
     padding: 5px;
+}
+@media (orientation: landscape){
+  main div{
+    color: #333;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+ 
+}
+
+/* Zmiana */
+@media (max-width: 310px) {
+    section.hero{
+      line-height: normal;
+    }
 }
 
   /* Tablety i większe */
@@ -113,7 +143,6 @@ footer{
     header nav ul li {
       font-size: 18px;
     }
-  
 
     img {
       max-width: 100%;
@@ -126,9 +155,9 @@ footer{
   
     section.hero{
       padding: 5px;
-      font-size: 2em;
-      color: #333;
-      background-color: transparent;
+      font-size: 1.8em;
+      color: #e1d0d0;
+      background-color: rgba(0, 0, 0, 0.4);
   }
 
     footer {
@@ -136,9 +165,7 @@ footer{
       padding: 20px;
     }
   }
-  @media (orientation: landscape){
-    main div
-  }
+  
   /* Desktopy */
   @media (min-width: 1024px) {
     .logo {
@@ -179,9 +206,9 @@ footer{
   width: 100%;
 }
 
-.slides img {
+.slides>img {
   width: 100%;
-  height: auto;
+  max-height: 750px;
   flex-shrink: 0;
 }
 
