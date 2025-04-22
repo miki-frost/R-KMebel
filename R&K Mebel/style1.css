@@ -6,7 +6,7 @@
 }
 /* Global Styles */
 div.wrapper {
-  
+  display: grid;
 }
 html {
     scroll-behavior: smooth;
@@ -80,10 +80,9 @@ header>nav>ul {
     align-items: center;
 }
 
-header>nav ul li {
+header>nav>ul>li {
     font-size: 20px;
     text-transform: uppercase;
-
 }
 
 /* Main */
