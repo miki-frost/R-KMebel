@@ -4,35 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>R&K Mebel - Meble na wymiar!</title>
-    <link rel="stylesheet   " href="style.css">
+    <link rel="stylesheet" href="style1.css">
 </head>
 <body>
+    <div id="up" class="wrapper">
+
     <!-- Header -->
-    <header>
+
+    <header class="container">
         <img class="logo" src="img/logo.jpg" alt="Logo firmy"" >
-        <h1>Meble na wymiar</h1>
-        <nav aria-label="Główna nawigacja">
+        <h1 class="h1">Meble na wymiar</h1>
+
+        <!-- Navigation -->
+
+        <nav class="nav">
             <ul>
                 <li><a href="">O firmie</a></li>
                 <li><a href="">Galeria</a></li>
                 <li><a href="">Kontakt</a></li>
             </ul>
-        </nav>
+        </nav> 
     </header>
+
     <!-- Main hero -->
-<main class="backColor">
-    <div><img src="img/kuchnia.jpg" alt="Kuchnia hero" >
+
+<main class="backColor hero">
         <section class="hero">
             <p>Kuchenne</p>
             <p>Łazienkowe</p>
             <p>Zabudowy wnęk</p>
             <p>Szafy</p>
             <p>Biurowe</p>
+            <img src="img/kuchnia.jpg" alt="Kuchnia hero" >
         </section>
-    </div>
-   
 </main>
-<!-- Slider -->
+
+    <!-- About us -->
+    <section>
+        <h2>O nas</h2>
+        <p>Nasza firma zajmuje się produkcją mebli na wymiar. Oferujemy szeroki wybór mebli kuchennych, łazienkowych, szaf wnękowych oraz biurowych. Nasze produkty charakteryzują się wysoką jakością wykonania oraz nowoczesnym designem.</p>
+        <p>Wszystkie nasze meble są dostosowane do indywidualnych potrzeb klientów. Dzięki temu możemy zapewnić, że każdy projekt jest unikalny i spełnia oczekiwania naszych klientów.</p>
+        <p>Nasza firma korzysta z najnowszych technologii oraz materiałów, co pozwala nam na produkcję mebli o wysokiej trwałości i estetyce. Nasz zespół składa się z doświadczonych specjalistów, którzy są gotowi pomóc w każdym etapie realizacji projektu.</p>
+        <p>Zapraszamy do zapoznania się z naszą ofertą oraz do kontaktu z nami w celu uzyskania szczegółowych informacji. Jesteśmy pewni, że nasze meble spełnią Państwa oczekiwania i będą służyć przez wiele lat.</p>
+    </section>
+    <!-- Slider -->
+
 <section id="galeria">
     <h2>Galeria</h2>
     <p>Przedstawiamy nasze produkty z oferty.</p>
@@ -46,8 +62,11 @@
       <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
       <button class="next" onclick="plusSlides(1)">&#10095;</button>
     </div>
+
   </section>
-  <!-- Footer -->
+
+    <!-- Footer -->
+
 <footer class="backColor">
     <div class="footer-wrapper">
         <img class="logo" src="img/logo.jpg" alt="Logo firmy">
@@ -56,6 +75,7 @@
         <p>Wszystkie prawa zastrzeżone &copy; 2025</p>
     </div>
 </footer>
+</div>
 <script src="script.js"></script>
 </body>
 </html>
