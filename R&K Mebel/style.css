@@ -41,35 +41,24 @@ a:focus {
 /* Header */
 
 header.container {
-display: grid;
-grid-template-columns: 1fr 2fr;
-grid-template-rows: 2fr 1fr;
-grid-template-areas: 
-  "logo h1"
-  "nav nav";
-  align-items: center;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
 }
 
 header img.logo {
-grid-area: logo; /*grid logo*/
 max-width: 125px;
 min-width: 100px;
 height: auto;
 }
 
 header>h1 {
-  grid-area: h1; /*grid h1*/
   width: 100%;
   text-transform: uppercase;
   font-size: 1.5em;
   text-align: center;
 }
 /* Nav */
-
-header>nav {
-  grid-area: nav; /*grid nav*/
-
-}
 
 header>nav>ul {
   width: 100%;
