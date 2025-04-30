@@ -1,0 +1,18 @@
+# System
+.DS_Store
+Thumbs.db
+
+# Edytory
+.vscode/
+.idea/
+
+# Build / output
+dist/
+build/
+
+# Node.js (jeśli kiedykolwiek dodasz node_modules)
+node_modules/
+
+# Logi i inne pliki tymczasowe
+*.log
+*.tmp
