@@ -133,7 +133,7 @@ footer {
   justify-content: center;
 }
 
-div.footer-wrapper{
+div.footer-logo{
   display: flex;
   justify-content: center;
   padding: 10px;
@@ -152,6 +152,8 @@ img.logo {
 
 .footer-links>ul {
     list-style: none;
+    text-align: center;
+
   }
 
 footer .footer-links a {
@@ -168,4 +170,20 @@ footer .footer-copyright {
   color: #fff;
   width: 100%;
   text-align: center;
+  border-top: 1px white solid;
+  margin-top: 10px;
+}
+
+div.footer-contact {
+  text-align: center;
+}
+
+div.footer-contact p {
+  padding: 5px 0;
+}
+
+.map-google{
+  width: 90%;
+  height: 150px;
+  margin: 10px 0;
 }
