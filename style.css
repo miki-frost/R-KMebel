@@ -181,6 +181,9 @@ div.footer-contact {
 div.footer-contact p {
   padding: 5px 0;
 }
+div.footer-contact p a{
+  color: #fff;
+}
 
 .map-google{
   width: 90%;
