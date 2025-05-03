@@ -16,3 +16,6 @@ node_modules/
 # Logi i inne pliki tymczasowe
 *.log
 *.tmp
+
+# README
+*.md
