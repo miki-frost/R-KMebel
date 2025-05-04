@@ -74,6 +74,35 @@ header>nav>ul>li {
   text-transform: uppercase;
 }
 
+/* Strzałka w górę */ 
+div.to-top {
+  overflow: hidden;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  background-color: #33333380;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: block;
+  text-align: center;
+  z-index: 2;
+}
+
+div>a.up {
+  text-decoration: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px; 
+  line-height: 40px;
+  z-index: 2;
+}
+
 /* Main */
 
 
