@@ -75,6 +75,7 @@ header>nav>ul>li {
 }
 
 /* Strzałka w górę */ 
+
 div.to-top {
   overflow: hidden;
   position: fixed;
@@ -105,6 +106,16 @@ div>a.up {
 
 /* Main */
 
+main.hero{
+  position: relative;
+  height: 80%;
+}
+
+main>section.hero>div {
+  position: relative;
+  background-color: #3333336e;
+  width: 100%;
+}
 
 
 /*Slider*/
